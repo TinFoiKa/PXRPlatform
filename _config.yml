@@ -1,7 +1,8 @@
 title: PXR Platform
 description: Documentation and tools for PXR template
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 url: https://tinfoika.github.io/PXRPlatform
+baseurl: "/PXRPlatform"
 
 aux_links:
   "PXR Platform on GitHub":
@@ -12,3 +13,6 @@ search_enabled: true
 
 # Enable dark mode
 color_scheme: dark
+
+# Build settings
+markdown: kramdown
