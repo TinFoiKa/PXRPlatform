@@ -12,7 +12,7 @@ aux_links:
 search_enabled: true
 
 # Enable dark mode
-color_scheme: dark
+color_scheme: pxtheme
 
 # Build settings
 markdown: kramdown
