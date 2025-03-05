@@ -19,22 +19,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
-          bundler-cache: true
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
+          ruby-version: '3.2'
+          bundler-cache: false
+      
+      - name: Install dependencies
+        run: bundle install
+      
       - name: Build site
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+      
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "_site/"
+          path: './_site'
 
   deploy:
     needs: build
