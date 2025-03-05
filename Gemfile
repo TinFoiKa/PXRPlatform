@@ -1,12 +1,7 @@
 source 'https://rubygems.org'
 
-gem "github-pages", group: :jekyll_plugins
-gem "jekyll"
-gem "just-the-docs"
-
-group :jekyll_plugins do
-  gem "jekyll-default-layout"
-  gem "jekyll-seo-tag"
-end
-
+gem "jekyll", "~> 3.9.3"
+gem "just-the-docs", "0.5.4"
+gem "github-pages", "~> 228"
 gem "webrick", "~> 1.8"
+gem "kramdown-parser-gfm"

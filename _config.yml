@@ -1,6 +1,6 @@
 title: PXR Platform
 description: Documentation and tools for PXR template
-theme: just-the-docs
+remote_theme: just-the-docs/just-the-docs
 url: https://tinfoika.github.io/PXRPlatform
 
 aux_links:
